@@ -149,3 +149,21 @@ body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
         margin-bottom: 15px;
     }
 /* e: blog */
+
+/* service */
+    #service {
+        background-color: var(--gray-color-200);
+        text-align: center;
+    }
+
+    #service .section__title {
+        color: var(--white-color);
+    }
+    #service .section__column--title {
+        color: var(--white-color);
+    }
+    #service .section__column--subtitle {
+        color: var(--gray-color-300);
+        margin-right: 0;
+    }
+/* e: service */
