@@ -125,6 +125,7 @@ body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
     }
     .section__columns {
         display: flex;
+        gap: 16px;
     }
     .section__title {
         font: normal normal bold 2.1875em var(--primary-font);
