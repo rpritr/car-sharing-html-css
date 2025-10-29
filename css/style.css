@@ -21,10 +21,12 @@
     body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
 
 /* container */
+
     .container {
         width: 1088px;
         margin: 0 auto;
     }
+
 /* e: container */
 
 /* top-section */
@@ -80,7 +82,6 @@
 /* e: top-section */
 
 /* header */
-/* TODO!!! add overlay and icon */
 
     .header {
         background: linear-gradient(0deg, var(--black-color-transparent-100), var(--black-color-transparent-200)), url(../images/image.png);
@@ -137,6 +138,12 @@
         background-color: var(--white-color);
         color: var(--secondary-color);
     }
+    .btn-adjacent {
+        background-color: var(--white-color);
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        box-shadow: 0 3px 6px var(--secondary-color-transparent-100);
+    }
 
     .btn-large { padding: 1.375em 3.4375em; }
     .btn-small { padding: 0.6875em 1.875em; }
@@ -162,6 +169,15 @@
         color: var(--black-color);
         text-transform: uppercase;
         margin-bottom: 2.1875rem;
+    }
+    .section__title::before, .section__title::after {
+        content: "";
+        background: var(--secondary-color);
+        width:50px;
+        height: 3px;
+        display: inline-block;
+        margin: 10px;
+        box-shadow: 0px 1px 6px var(--secondary-color-transparent-100);
     }
     .section__column--title {
         font: normal normal normal 1.1875em var(--primary-font);
@@ -199,20 +215,54 @@
 /* e: service */
 
 /* contact */
-/* TODO!!! */
-
+    #contact .section__column {
+        width: 50%;
+    }
+    #contact .section__column img {
+        width: 100%;
+    }
     .form {
-
+        display: flex;
+        flex-direction: column;
     }
     .form__input {
         width: 100%;
         border: 1px solid var(--gray-color-400);
         border-radius: 8px;
         padding: 8px 12px;
-        margin-bottom: 20px;
+        outline: none;
+    }
+    .form__input:focus {
+        box-shadow: 0 1px 6px var(--secondary-color-transparent-100);
+        border: 1px solid var(--secondary-color);
+    }
+    .form__input::placeholder {
+
+        font: normal normal normal 1em var(--primary-font);
+        letter-spacing: 0;
+        color: var(--gray-color-300);
+    }
+    .form__checkbox-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
     }
     .form__checkbox {
         margin-bottom: 20px;
+    }
+    .form .form__checkbox {
+        font: normal normal 300 0.625em var(--secondary-font);
+        letter-spacing: 0;
+        color: var(--gray-color-300);
+    }
+    .form input[type="submit"] {
+        width: 142px;
+        align-self: flex-end;
+    }
+    .form textarea { height: 140px; }
+    .form #checkbox {
+        width: 20px;
+        margin-top: 4px;
     }
 /* e: contact */
 /* footer */
