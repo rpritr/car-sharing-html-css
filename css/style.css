@@ -90,6 +90,8 @@
         margin-top: -110px;
         padding-top: 250px;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
     .header__title {
         color: var(--white-color);
