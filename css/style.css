@@ -83,8 +83,7 @@
 /* TODO!!! add overlay and icon */
 
     .header {
-        background-image: url(../images/image.png);
-        background-repeat: no-repeat;
+        background: linear-gradient(0deg, var(--black-color-transparent-100), var(--black-color-transparent-200)), url(../images/image.png);
         background-size: cover;
         min-height: 100vh; /* TODO */
         margin-top: -110px;
@@ -105,6 +104,18 @@
 
     .btn-container { margin-top: 3.375em; }
 
+    .header-icon {
+        height: 55px;
+        width: 55px;
+        background: var(--secondary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -27px;
+    }
 /* e: header */
 
 /* buttons */
